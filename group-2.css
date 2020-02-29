@@ -8,8 +8,20 @@ body {
 }
 
 h1, h2, h3 {
-	margin-bottom: .5rem;
+	margin-bottom: .8rem;
 	color: #52a2e2;
+	border-bottom: 3px solid #52a2e2;
+}
+
+.entry h4 {
+    color: #52a2e2;
+    margin-bottom: .3rem;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.entry {
+    padding-top: 15px;
 }
 
 nav {
@@ -57,6 +69,14 @@ nav > * {
 	padding: 2rem;
 }
 
+.pledge {
+    background-color: rgba(82,162,226,.2);
+    padding: 20px;
+}
+
+.pledge p {
+    color: #52a2e2;
+}
 /* MEDIA QUERIES ******************************************************/
 @media screen and (max-width:450px) {
 	nav {
