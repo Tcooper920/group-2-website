@@ -14,10 +14,20 @@ h1 {
 	color: #ff8122;
 }
 
-h2, h3 {
+h2 {
 	font-weight: bold;
 	margin-bottom: .5rem;
 	color: #52a2e2;
+}
+
+h3 {
+	font-weight: bold;
+	color: #52a2e2;
+	margin-top: 1rem;
+}
+
+h3 + p {
+	margin-top: 0;
 }
 
 p {
@@ -27,7 +37,7 @@ p {
 nav {
 	display: flex;
 	position: fixed;
-	width:100%;
+	width: 100%;
 	align-items: center;
 	height: 3rem;
 	background-color: #434e52;
@@ -42,12 +52,16 @@ nav a {
 }
 
 nav a:hover {
-	opacity: .5;
+	color: #FF8122;
 }
 
 nav > * {
 	padding-left: 1rem;
 	padding-right: 1rem;
+}
+
+a.current-page {
+	color: #ff8122;
 }
 
 #mobile-menu-button {
