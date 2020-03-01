@@ -1,6 +1,6 @@
 
 
-/* mobile dropdown menu triggered by clicking "hamburger" button */
+/* mobile dropdown menu triggered by clicking "hamburger" button *********/
 document.getElementById("mobile-menu-button").addEventListener("click", function () {
 
 	var numberOfLinks = document.getElementsByClassName("page-links");
@@ -21,12 +21,12 @@ document.getElementById("mobile-menu-button").addEventListener("click", function
 
 });
 
-/* display the hidden nav links when expanding browser width from mobile size to desktop size */
+/* display the hidden nav links when expanding browser width from mobile size to desktop size *********/
 function displayHiddenNavLinksOnDesktop() {
 
 	var numberOfLinks = document.getElementsByClassName("page-links");
 
-	if (window.innerWidth >= 450) { // display links on desktop view
+	if (window.innerWidth >= 650) { // display links on desktop view
 		for (var i = 0; i < numberOfLinks.length; i++) {
 			document.getElementsByTagName("nav")[0].getElementsByClassName("page-links")[i].style.display = "block";
 		}
@@ -39,5 +39,39 @@ function displayHiddenNavLinksOnDesktop() {
 }
 
 window.onresize = displayHiddenNavLinksOnDesktop;
+
+/* hide nav bar when scrolling down and show nav bar when scrolling up *********/
+var beforeScrollPosition = window.pageYOffset;
+
+window.onscroll = function() {
+
+	var numberOfLinks = document.getElementsByClassName("page-links");
+	
+	var currentScrollingPosition = window.pageYOffset;
+
+	if (beforeScrollPosition < currentScrollingPosition) {	
+		for (var i = 0; i < numberOfLinks.length; i++) { // hide links in nav bar
+			document.getElementsByTagName("nav")[0].getElementsByClassName("page-links")[i].style.display = "none";
+		}
+		document.getElementsByTagName("nav")[0].style.top = "-3rem"; // hide nav bar
+	} else {
+		
+		if (window.innerWidth >= 650) { // hide links by default if window resized from desktop to mobile width
+			for (var i = 0; i < numberOfLinks.length; i++) { // show links in nav bar
+				document.getElementsByTagName("nav")[0].getElementsByClassName("page-links")[i].style.display = "block";
+			}
+		}
+		document.getElementsByTagName("nav")[0].style.top = "0"; //show nav bar
+	}
+	beforeScrollPosition = currentScrollingPosition;
+}
+
+/* "Back to Top" button *********/
+
+var backToTopBtn = document.getElementById("back-top-top");
+
+backToTopBtn.addEventListener("click", function() {
+	window.scrollTo(0, 0);
+})
 
 
