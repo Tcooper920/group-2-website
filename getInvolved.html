@@ -4,18 +4,19 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="group-2.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
 
 	<nav>
-		<a href="" class="page-links">Home</a>
-		<a href="" class="page-links">Information</a>
-		<a href="" class="page-links">Get Involved</a>
+		<a href="index.html" class="page-links">Home</a>
+		<a href="group-2-recycle.html" class="page-links">Information</a>
+		<a href="" class="page-links current-page">Get Involved</a>
 		<div id="mobile-menu-button">&#9776;</div>
 	</nav>
     
 <div class="get-involved">
-<div class="two-row-wrapper">
+<div class="two-row-wrapper two-row-wrapper-get-involved-page margin-top-spacer">
 	
 	<div class="left">
         <div class="text">
@@ -78,6 +79,31 @@
 </div>
 
 <script type="text/javascript" src="group-2.js"></script>
+<script>
+// Signing the pledge
+
+var sign = document.getElementById('sign');
+
+sign.addEventListener("click", function() {
+    var naming = document.getElementById('pledgeName');
+    alert(naming.value + " thank you for signing the pledge");
+});
+
+var five = document.getElementById('five');
+five.addEventListener("click", function() {
+    alert("Thank you for committing to donate " + five.value);
+});
+
+var ten = document.getElementById('ten');
+ten.addEventListener("click", function() {
+    alert("Thank you for committing to donate " + ten.value);
+});
+
+var twenty = document.getElementById('twenty');
+twenty.addEventListener("click", function() {
+    alert("Thank you for committing to donate " + twenty.value);
+});
+</script>
 </body>
 </html>
 
