@@ -1,31 +1,3 @@
-<<<<<<< HEAD
-
-var naming = document.getElementById('naming');
-
-
-sign.addEventListener("click", function() {
-	alert(naming.value + " thank you for signing the pledge");
-})
-
-
-var five = document.getElementById('five');
-five.addEventListener("click", function() {
-	alert("Thank you for committing to donate " + five.value);
-})
-
-var ten = document.getElementById('ten');
-ten.addEventListener("click", function() {
-	alert("Thank you for committing to donate " + ten.value);
-})
-
-var twenty = document.getElementById('twenty');
-twenty.addEventListener("click", function() {
-	alert("Thank you for committing to donate " + twenty.value);
-
-=======
->>>>>>> 04995d1210ff3a74daad4ba95063ebea8b9bc3d5
-
-
 /* mobile dropdown menu triggered by clicking "hamburger" button *********/
 document.getElementById("mobile-menu-button").addEventListener("click", function () {
 
@@ -97,11 +69,5 @@ var backToTopBtn = document.getElementById("back-top-top");
 
 backToTopBtn.addEventListener("click", function() {
 	window.scrollTo(0, 0);
-<<<<<<< HEAD
 
-})
-
-
-=======
 });
->>>>>>> 04995d1210ff3a74daad4ba95063ebea8b9bc3d5

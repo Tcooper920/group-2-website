@@ -1,11 +1,5 @@
 * {
 	margin: 0;
-
-
-}
-
-
-
 }
 
 h1, h2, h3 {
@@ -13,7 +7,6 @@ h1, h2, h3 {
 	color: #52a2e2;
 	padding: 0;
 }
-
 
 body {
 	font-family: 'Lato', Calibri;
@@ -78,13 +71,9 @@ nav > * {
 	padding-right: 1rem;
 }
 
-
-
-
 a.current-page {
 	color: #ff8122;
 }
-
 
 #mobile-menu-button {
 	display: none;
@@ -200,10 +189,6 @@ font-size: 15px;
     text-align:center;
 }
 
-/* MEDIA QUERIES ******************************************************/
-@media screen and (max-width:450px) {
-
-
 .banner-image {
 	background-image: url("images/cleaning-ocean.jpg");
 	background-size: cover;
@@ -310,7 +295,6 @@ footer {
 		flex-direction: column;
 	}
 
-
 	#donation-container {
 		height: initial;
 	}
@@ -322,7 +306,11 @@ footer {
 		padding-right: 9rem;
 	}
 
-
 	.two-row-wrapper-get-involved-page {
 		padding: 0px 0px;
 	}
+
+	.two-row-wrapper-get-involved-page {
+		
+	}
+}
