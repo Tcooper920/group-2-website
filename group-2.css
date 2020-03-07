@@ -111,7 +111,8 @@ a.current-page {
 }
 
 .number {
-    color:rgba(255,129,34,.2);
+    color:rgba(255,129,34,.3);
+    /*use .3 for rgba not .2 */
     font-size:73px;
     font-family: "Courier New", Courier, monospace;
     position: absolute;
@@ -141,7 +142,7 @@ a.current-page {
 }
 
 .left {
-    background-image: url(images/12);
+    background-image: url(images/12.jpg);
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /
 }
@@ -160,7 +161,8 @@ a.current-page {
     border: 1px solid white;
     padding: 20px;
     width: 70%;
-    margin: 10px;
+    margin: 30px; 
+    /*margin 30 px not 10px */
 }
 
 input[type=button], input[type=submit], input[type=reset] {
@@ -179,7 +181,7 @@ width: 20%;
 
 input[type=text] {
   border: 1px solid #52a2e2;
-  color: white;
+  color: black;
   padding: 0px 15px;
   text-decoration: none;
   cursor: pointer;
