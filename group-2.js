@@ -1,4 +1,5 @@
-// /* mobile dropdown menu triggered by clicking "hamburger" button *********/
+
+/* mobile dropdown menu triggered by clicking "hamburger" button *********/
 document.getElementById("mobile-menu-button").addEventListener("click", function () {
 
 	var numberOfLinks = document.getElementsByClassName("page-links");
