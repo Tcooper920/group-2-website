@@ -1,6 +1,4 @@
-
-
-/* mobile dropdown menu triggered by clicking "hamburger" button *********/
+// /* mobile dropdown menu triggered by clicking "hamburger" button *********/
 document.getElementById("mobile-menu-button").addEventListener("click", function () {
 
 	var numberOfLinks = document.getElementsByClassName("page-links");
@@ -21,7 +19,7 @@ document.getElementById("mobile-menu-button").addEventListener("click", function
 
 });
 
-/* display the hidden nav links when expanding browser width from mobile size to desktop size *********/
+// display the hidden nav links when expanding browser width from mobile size to desktop size *********/
 function displayHiddenNavLinksOnDesktop() {
 
 	var numberOfLinks = document.getElementsByClassName("page-links");
@@ -40,7 +38,7 @@ function displayHiddenNavLinksOnDesktop() {
 
 window.onresize = displayHiddenNavLinksOnDesktop;
 
-/* hide nav bar when scrolling down and show nav bar when scrolling up *********/
+// hide nav bar when scrolling down and show nav bar when scrolling up *********/
 var beforeScrollPosition = window.pageYOffset;
 
 window.onscroll = function() {
@@ -66,12 +64,9 @@ window.onscroll = function() {
 	beforeScrollPosition = currentScrollingPosition;
 }
 
-/* "Back to Top" button *********/
-
+// /* "Back to Top" button *********/
 var backToTopBtn = document.getElementById("back-top-top");
 
 backToTopBtn.addEventListener("click", function() {
 	window.scrollTo(0, 0);
-})
-
-
+});

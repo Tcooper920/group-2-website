@@ -1,0 +1,109 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="group-2.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<nav>
+		<a href="" class="page-links">Home</a>
+		<a href="" class="page-links">Information</a>
+		<a href="" class="page-links">Get Involved</a>
+		<div id="mobile-menu-button">&#9776;</div>
+	</nav>
+    
+<div class="get-involved">
+<div class="two-row-wrapper two-row-wrapper-get-involved-page padding-top-spacer">
+	
+	<div class="left">
+        <div class="text">
+        <h1>Get Involved</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique elit eget nulla bibendum, nec aliquet arcu ultricies. Vestibulum eu placerat tortor, sed venenatis sapien. Nullam at maximus ipsum. Nullam molestie aliquam mauris ac elementum. </p>
+    </div></div>	
+	
+	<div class="entry">
+        <H1>How You Can Help</H1>
+        <div class="entry">
+            <span class="number"><b>01.</b></span>
+            <h4>Take to the shores</h4>
+
+            <p>Our ocean unifies our world like nothing else. And saving it from ongoing threats is a cause that affects us all. We are on the front lines of ocean protection, investing in research, leadership and advocacy that advances science-based solutions that work.</p><br>
+            <p>Give today and make a difference for the future of our ocean!</p>
+       
+        </div>
+        
+        <div class="entry">
+            <span class="number"><b>02.</b></span>
+            <h4>Make a donation</h4>
+            
+                <p>Electing public officials that support good ocean policies can help us protect marine life and our oceans. Do your research on candidates and make an informed decision, then exercise your right (and responsibility) to vote. And don’t let Election Day be the last time they hear from you. Follow up with your candidates and elected officials regularly to remind them of policies you care about.</p>
+        
+
+        <input type="button" id="five" placeholder="sign" value="$5">
+        <input type="button" id="ten" placeholder="sign" value="$10">
+        <input type="button" id="twenty" placeholder="sign" value="$20">
+  
+        </div>
+            <div class="entry">
+            <span class="number"><b>03.</b></span>
+            <h4>Vote on ocean issues</h4>
+            
+                <p>Electing public officials that support good ocean policies can help us protect marine life and our oceans. Do your research on candidates and make an informed decision, then exercise your right (and responsibility) to vote. And don’t let Election Day be the last time they hear from you. Follow up with your candidates and elected officials regularly to remind them of policies you care about.</p>
+         
+        </div>
+            
+        <div class="entry">    
+            <span class="number"><b>04.</b></span>
+            <h4>Pledge to quit cutlery</h4>
+            <p>In 2018, for the first time since Ocean Conservancy first began counting cutlery as a separate data category, plastic forks, knives and spoons were among the top ten most-collected items in the world during Ocean Conservancy’s International Coastal Cleanup (ICC). ICC volunteers removed nearly 2 million from beaches and waterways around the world.</p>
+            <br>
+            <p>A 2015 study by Ocean Conservancy scientists and partners found that plastic cutlery are among the most dangerous to ocean animals such as seabirds and turtles, especially as they break up into smaller microplastics.</p>
+            <br>
+            <p>For the sake of our ocean and the animals that call it home…</p>
+            <br>
+            
+            <div class="pledge">
+                
+            <h2>Sign The Pledge</h2>
+            I <input type="text" id="pledgeName" placeholder="Name">pledge to quit the cutlery. I will travel with a set of reusable cutlery. I will only dine at location that use reusable utensils. When I am picking up my take out I will say, "no thank you" to plastic cutlery. 
+            <br>
+                
+            <input type="button" id="sign" placeholder="sign" value="Sign">
+                
+            </div>
+        </div>
+	</div>
+</div>
+
+<script type="text/javascript" src="group-2.js"></script>
+<script>
+// Signing the pledge
+
+var sign = document.getElementById('sign');
+
+sign.addEventListener("click", function() {
+    var naming = document.getElementById('pledgeName');
+    alert(naming.value + " thank you for signing the pledge");
+});
+
+var five = document.getElementById('five');
+five.addEventListener("click", function() {
+    alert("Thank you for committing to donate " + five.value);
+});
+
+var ten = document.getElementById('ten');
+ten.addEventListener("click", function() {
+    alert("Thank you for committing to donate " + ten.value);
+});
+
+var twenty = document.getElementById('twenty');
+twenty.addEventListener("click", function() {
+    alert("Thank you for committing to donate " + twenty.value);
+});
+</script>
+</body>
+</html>
+
