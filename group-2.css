@@ -264,10 +264,9 @@ footer {
 	text-decoration: none;
 }
 
-/*.padding-top-spacer {
-	margin-top: 0;
-	padding-top: 3rem;
-}*/
+.padding-top-spacer {
+	margin-top: 3rem;
+}
 
 /* MEDIA QUERIES ***************************************************************/
 
