@@ -88,7 +88,6 @@ a.current-page {
 .two-row-wrapper {
     /*padding: 0px 50px;*/
 	display: flex;
-	margin-top: 3rem;
 }
 
 .two-row-wrapper > *{
@@ -264,7 +263,7 @@ footer {
 	text-decoration: none;
 }
 
-.padding-top-spacer {
+.margin-top-spacer {
 	margin-top: 3rem;
 }
 
