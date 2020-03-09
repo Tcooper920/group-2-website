@@ -1,4 +1,3 @@
-
 /* mobile dropdown menu triggered by clicking "hamburger" button *********/
 document.getElementById("mobile-menu-button").addEventListener("click", function () {
 
@@ -70,4 +69,5 @@ var backToTopBtn = document.getElementById("back-top-top");
 
 backToTopBtn.addEventListener("click", function() {
 	window.scrollTo(0, 0);
+
 });
