@@ -126,7 +126,7 @@
 
 $(".threeRsWhite").mouseenter(function(){
 	$(this).addClass("spin").delay().queue(function(){
-		$(this).removeClass("spin").stop();
+		$(this).removeClass("spin").dequeue();
 	});
 	
 });
