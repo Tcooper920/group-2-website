@@ -91,8 +91,6 @@ window.onscroll = function() {
 
 var backToTopBtn = document.getElementById("back-top-top");
 
-backToTopBtn.addEventListener("click", function() {
+backToTopBtn.addEventListener("click", function(){
 	window.scrollTo(0, 0);
-})
-
-
+});

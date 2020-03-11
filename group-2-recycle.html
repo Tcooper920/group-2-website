@@ -6,24 +6,70 @@
 	<link rel="stylesheet" type="text/css" href="group-2-recycle.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Covered+By+Your+Grace|Gamja+Flower|Give+You+Glory|Mansalva|Mrs+Saint+Delafield|Nanum+Pen+Script|Poor+Story&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    function reduceFunction(){
+    document.getElementsByClassName("R1").HTMLBodyElement.style.color = "red";
+}
+    </script>
+    <script>
+/* rosie js */
+/* hover on recycle symbol - it spins */
+    
+function reduceFunction(){
+    document.getElementsByClassName("R1").style.color = "red";
+} 
+
+var spinner = document.getElementsByClassName("threeRsWhite");
+
+var R1 = document.getElementsByClassName("R1");
+
+var R2 = document.getElementsByClassName("R2");
+
+var R3 = document.getElementsByClassName("R3");
+
+var R1_Explained = document.getElementsByClassName("R1_Explained");
+
+var R2_Explained = document.getElementsByClassName("R2_Explained");
+
+var R3_Explained = document.getElementsByClassName("R3_Explained");
+
+
+var RSymbol;
+
+R1.addEventListener("click", function(){
+    RSymbol = "pick1"
+});
+
+R2.addEventListener("click", function(){
+    RSymbol = "pick2"
+});
+
+R3.addEventListener("click", function(){
+    RSymbol = "pick3"
+});
+
+function recyclePicks(R1, R2, R3){
+    if(RSymbol == "pick1"){
+        R2.addClass = "unlisted";
+    }
+}   
+    
+    
+    
+</script>
 </head>
 <body class="wrapper_RM">
     
-    <div class="headerLogo">
-        <a href="index.html">
-            <img class="LogoType" href="images/saveouroceanslogowithbacker.jpg" src="images/saveouroceanslogowithbacker.jpg" alt="save our oceans logo">
-        </a>
     
-    
-    
-	<nav>
+    <nav>
 		<a href="index.html" class="page-links">Home</a>
 		<a href="group-2-recycle.html" class="page-links">Sustainability</a>
 		<a href="getInvolved.html" class="page-links">Get Involved</a>
 		<div id="mobile-menu-button">&#9776;</div>
 	</nav>
-    </div>
+
 
 <div class="underThesea">
 	<div class="contentBox">
@@ -31,9 +77,9 @@
         </div>
         <div class="sustain">
             <ul class="listed">
-                <li class="R1">REDUCE</li><br/>
-                <li class="R2">REUSE</li><br/>
-                <li class="R3">RECYCLE</li><br/>
+                <li class="R1" onclick="reduceFunction()">REDUCE</li><br/>
+                <li class="R2" onclick="reuseFunction()">REUSE</li><br/>
+                <li class="R3" onclick="recycleFunction()">RECYCLE</li><br/>
             </ul>
         </div>
         <div class="R1_Explained">
@@ -110,29 +156,151 @@
             <div class="source">Source: conserve-energy-future.com </div>
         
         </div>
+        <div class="however">
+        However...
+        </div>
+        <div class="NegFx">
+             
+             <div class="rListgroup">There are<br/>Negative Effects of Recycling<br/>
+	         </div>
+             
+             <div class="rArticle">Plastic pollution is one of the greatest threats to ocean health worldwide.<br/>With skyrocketing plastic production, low levels of recycling, and poor waste management, between 4 and 12 million metric tons of plastic enter the ocean each year—enough to cover every foot of coastline on the planet! And that amount is expected to more than double in the next 10 years. Let that sink in for a moment.<br/>
+             <br/>
+
+             In the ocean, plastic pollution impacts sea turtles, whales, seabirds, fish, coral reefs, and countless other marine species and habitats. In fact, scientists estimate that more than half of the world’s sea turtles and nearly every seabird on Earth have eaten plastic in their lifetimes. Plastic pollution also mars otherwise beautiful beaches, coastlines, and snorkel and dive sites worldwide, even in remote areas such as Midway Atoll.<br/><br/>
+             
+             One of the reasons that plastic pollution is such a problem is that it doesn’t go away: “plastics are forever.” Instead, plastic debris simply breaks down into ever-smaller particles, known as microplastics, whose environmental impacts are still being determined.</div>
+            
+             <div class="helpUs">
+             <b>So, what can you do about ocean plastic pollution?</b><br/>
+             Everyone can do something to reduce the amount of plastic that enters the ocean. Here are several ways you can make a difference.<br/><br/>
+             </div>
+            
+             <div id="readMore">Read More
+             </div>
+             
+             <span id="hiddenWords">
+                 
+             <div class="waysToHelp">
+             <b>Reduce Your Use of Single-Use Plastics</b><br/>
+             Wherever you live, the easiest and most direct way that you can get started is by reducing your own use of single-use plastics. Single-use plastics include plastic bags, water bottles, straws, cups, utensils, dry cleaning bags, take-out containers, and any other plastic items that are used once and then discarded.<br/>
+             The best way to do this is by a) refusing any single-use plastics that you do not need (e.g. straws, plastic bags, takeout utensils, takeout containers), and b) purchasing, and carrying with you, reusable versions of those products, including reusable grocery bags, produce bags, bottles, utensils, coffee cups, and dry cleaning garment bags. And when you refuse single-use plastic items, help businesses by letting them know that you would like them to offer alternatives.<br/><br/>
+             </div>
+            
+             <div class="waysToHelp">
+             <b>Recycle Properly</b><br/>
+             This should go without saying, but when you use single-use (and other) plastics that can be recycled, always be sure to recycle them. At present, just 9% of plastic is recycled worldwide. Recycling helps keep plastics out of the ocean and reduces the amount of “new” plastic in circulation. If you need help finding a place to recycle plastic waste near you, check Earth911’s recycling directory. It's also important to check with your local recycling center about the types of plastic they accept.<br/><br/>
+             </div>
+            
+             <div class="waysToHelp">
+             <b>Participate In (or Organize) a Beach or River Cleanup</b><br/>
+             Help remove plastics from the ocean and prevent them from getting there in the first place by participating in, or organizing a cleanup of your local beach or waterway. This is one of the most direct and rewarding ways to fight ocean plastic pollution. You can simply go to the beach or waterway and collect plastic waste on your own or with friends or family, or you can join a local organization’s cleanup or an international event like the International Coastal Cleanup.<br/><br/>
+             </div>
+            
+             <div class="waysToHelp">
+             <b>Support Bans</b><br/>
+             Many municipalities around the world have enacted bans on single use plastic bags, takeout containers, and bottles. You can support the adoption of such policies in your community. Here is a list of resources for legislative bodies considering limiting the use of plastic bags.<br/><br/>
+             </div>
+            
+             <div class="waysToHelp">
+             <b>Avoid Products Containing Microbeads</b><br/>
+             Tiny plastic particles, called “microbeads,” have become a growing source of ocean plastic pollution in recent years. Microbeads are found in some face scrubs, toothpastes, and bodywashes, and they readily enter our oceans and waterways through our sewer systems, and affect hundreds of marine species. Avoid products containing plastic microbeads by looking for “polythelene” and “polypropylene” on the ingredient labels of your cosmetic products (find a list of products containing microbeads here).<br/><br/>
+             </div>
+            
+             <div class="waysToHelp">
+             <b>Spread the Word</b><br/>
+             Stay informed on issues related to plastic pollution and help make others aware of the problem. Tell your friends and family about how they can be part of the solution, or host a viewing party for one of the many plastic pollution focused documentaries, like Bag It, Addicted to Plastic,
+             Plasticized, or Garbage Island.<br/><br/>
+             </div>
+            
+             <div class="waysToHelp">
+             <b>Support Organizations Addressing Plastic Pollution</b><br/>
+             There are many non-profit organizations working to reduce and eliminate ocean plastic pollution in a variety of different ways, including Oceanic Society, Plastic Pollution Coalition, 5 Gyres, Algalita, Plastic Soup Foundation, and others. These organizations rely on donations from people like you to continue their important work. Even small donations can make a big difference!<br/><br/>
+             </div>
+            
+             <div class="rArticle">
+             These seven ideas only scratch the surface for ways you can help address the growing problem of plastic pollution in the oceans. The important thing is that we all do something, no matter how small. For more ideas and resources, sign up to join our Blue Habits community of people worldwide committed to joyful daily actions that improve ocean health.<br/>
+             </div>
+          
+             <div class="source" id="sourceMore">Source: Brian Hutchinson, oceanicsociety.org </div>
+            
+             <div id="readLess">Read Less
+             </div>
+             
+             </span>
+        
+        </div>
+        <div class="BanBox">
+        Support our petition to federally ban single use plastics.
+        <div type="button" class="banButton">SIGN</div>
+        </div>
         
         
     </div>	
 </div>
     
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script type="text/javascript" src="group-2.js"></script>
 
 <script type="text/javascript" src="group-2-recycle.js">
 </script>
-
-    
     
 <script>
+/* rosie js */
+/* hover on recycle symbol - it spins */
+    
+function reduceFunction(){
+    document.getElementsByClassName("R1").style.color = "red";
+} 
 
+var spinner = document.getElementsByClassName("threeRsWhite");
+
+var R1 = document.getElementsByClassName("R1");
+
+var R2 = document.getElementsByClassName("R2");
+
+var R3 = document.getElementsByClassName("R3");
+
+var R1_Explained = document.getElementsByClassName("R1_Explained");
+
+var R2_Explained = document.getElementsByClassName("R2_Explained");
+
+var R3_Explained = document.getElementsByClassName("R3_Explained");
+
+
+var RSymbol;
+
+R1.addEventListener("click", function(){
+    RSymbol = "pick1"
+});
+
+R2.addEventListener("click", function(){
+    RSymbol = "pick2"
+});
+
+R3.addEventListener("click", function(){
+    RSymbol = "pick3"
+});
+
+function recyclePicks(R1, R2, R3){
+    if(RSymbol == "pick1"){
+        R2.addClass = "unlisted";
+    }
+}   
+    
+    
+    
+</script>
+    
+    
+<!--<script>
 $(".threeRsWhite").mouseenter(function(){
 	$(this).addClass("spin").delay().queue(function(){
 		$(this).removeClass("spin").dequeue();
 	});
 	
 });
-</script>
+</script>-->
     
 </body>
 </html>

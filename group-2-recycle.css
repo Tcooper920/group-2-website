@@ -22,13 +22,8 @@ h1, h2, h3 {
 	margin-bottom: .5rem;
 	color: #52a2e2;
 }
-
-img.LogoType {
-    width:100%;
-}
-
 nav {
-	display: block;
+	display: flex;
 	align-items: center;
 	height: 3rem;
 	background-color: #434e52;
@@ -85,8 +80,6 @@ nav > * {
 	background-size: cover;
     overflow: auto;
     display: block;
-    position: relative;
-    
 }
 .contentBox {
 	margin:0px auto;
@@ -95,24 +88,22 @@ nav > * {
     width: 100vw;
     height: 150%;
     float: left;
-    display:inline;
-
+    display: inline-block;
 }
 .threeRsWhite {
-	width: 40vw;
+	width: 25vw;
     display: block;
-    text-align: center;
-    padding-top:7vw;
-    padding-bottom:3vw;
-	padding-left:15%;
+    margin-top:7vw;
+    margin-bottom:3vw;
+	margin-left:15%;
+    border-radius: 50%;
     float: left;
 }
-.spin:hover {
+.threeRsWhite:hover {
     transform-origin: center;
-    -ms-transform: rotate(360deg); /* IE 9 */
-    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
-    transform:rotate(360deg);
-    transition-duration: 10s;
+    transform:rotate(-360deg);
+    transition-timing-function: cubic-bezier(0.42, 0, 0, 0.58);
+    transition-duration: 5s;
 }
 
 
@@ -124,6 +115,15 @@ nav > * {
     font-family: 'Lato', sans-serif;
     font-size: 5vw;
     color:#fff;
+    float: left;
+}
+.unlisted {
+    margin-left: 2%;
+    margin-top: 11vw;
+    line-height: 6.8vw;
+    font-family: 'Lato', sans-serif;
+    font-size: 5vw;
+    color:#ffffff73;
     float: left;
 }
 .R1_Explained {
@@ -167,6 +167,33 @@ nav > * {
     background-color: #ffffffa3;
     
 }
+.however {
+    font-size: 6vw;
+    color:#fff;
+    font-weight: 200;
+    margin-left: 18%;
+    margin-top: -4vw;
+    margin-bottom: 5.5vw;
+    opacity: .7;
+    font-family: 'Nanum Pen Script', cursive;
+    font-weight: 400;
+    
+}
+.NegFx {
+    clear:both;
+    display:block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10vw;
+    padding-top: 5vw;
+    padding-left:8%;
+    padding-right:10%;
+    padding-bottom:2vw;
+    background-color: #ffffffa3;
+    line-height: 4vw;
+    
+}
 div.rListgroup {
     font-size:3.5vw;
     font-weight:700;
@@ -190,8 +217,51 @@ div.rlistingL2 {
     line-height:2.75vw;
     margin-top:2vw;
 }
-.Head2 {
-    margin-top:3vw;
+.rArticle, .waysToHelp {
+    font-size:1.75vw;
+    line-height: 3vw;
+    text-align:left;
+    padding-top:1vw;
+    margin-bottom:2vw;
+}
+.helpUs {
+    font-size:1.75vw;
+    text-align:left;
+    padding-top:1vw;
+    margin-bottom:2vw;
+    line-height: 3vw;
+}
+.BanBox {
+    clear:both;
+    display:block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10vw;
+    padding-top: 5vw;
+    padding-left:8%;
+    padding-right:10%;
+    padding-bottom:2vw;
+    background-color: #ffffffa3;
+    font-size:1.75vw;
+    line-height: 3vw;
+    text-align:center;
+}
+.banButton {
+    background-color: orange;
+    color: #fff;
+    font-size:2.5vw;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    width: 15%;
+    height: 5vw;
+    border-radius: 5vw;
+    margin-top: 2vw;
+    margin-left: 42.5%;
+    margin-bottom: 4vw;
+    padding-top: .8vw;
+    text-align:center;
+    
 }
 .source {
     text-align:left;
@@ -199,6 +269,30 @@ div.rlistingL2 {
     font-weight: 600;
     margin-top:3vw;
     margin-bottom:3vw;
+}
+#readMore {
+    border: 2px solid #58595b;
+    color: #58595b;
+    display: block;
+    font-size: 1.5vw;
+    font-weight: 400;
+    text-align: center;
+    width:16%;
+    height: 4vw;
+    margin-left: 42%;
+    margin-top: -3vw;
+}
+#readLess {
+    border: 2px solid #58595b;
+    color: #58595b;
+    display:none;
+    font-size: 1.5vw;
+    font-weight: 400;
+    text-align: center;
+    width:16%;
+    height: 4vw;
+    margin-left: 42%;
+    margin-bottom: 3vw;
 }
 /* MEDIA QUERIES ******************************************************/
 @media screen and (max-width:450px) {
@@ -264,9 +358,6 @@ div.rlistingL2 {
     div.rlistingL2 {
         font-size:3.75vw;
         line-height:5.75vw;
-        margin-top:5vw;
-    }
-    .Head2 {
         margin-top:5vw;
     }
     .source {
