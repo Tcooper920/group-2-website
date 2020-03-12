@@ -6,7 +6,7 @@
 
 var spinner = document.getElementsByClassName("threeRsWhite");
 
-var R1 = document.getElementById("R1");
+var reduce = document.getElementById("R1");
 
 var R2 = document.getElementById("R2");
 
@@ -22,8 +22,8 @@ var R3_Explained = document.getElementById("R3_Explained");
 var RSymbol;
 
 
-R1.addEventListener(“click”, function () {
-    console.log("hi");
+reduce.addEventListener(“click”, function(){
+    console.log("hi")
 });
 
 

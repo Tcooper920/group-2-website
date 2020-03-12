@@ -368,6 +368,18 @@ div.rlistingL2_R3 {
     margin-top:3vw;
     margin-bottom:3vw;
 }
+#BanModal {
+    width:80%;
+    height: 20vw;
+    background-color: #fff;
+    color:#58595b;
+}
+.BanForm {
+    width:80%;
+    height: 5vw;
+    clear: both;
+    float:left;
+}
 /* MEDIA QUERIES ******************************************************/
 @media screen and (max-width:450px) {
 	nav {
