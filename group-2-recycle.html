@@ -8,57 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Covered+By+Your+Grace|Gamja+Flower|Give+You+Glory|Mansalva|Mrs+Saint+Delafield|Nanum+Pen+Script|Poor+Story&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-    function reduceFunction(){
-    document.getElementsByClassName("R1").HTMLBodyElement.style.color = "red";
-}
-    </script>
-    <script>
-/* rosie js */
-/* hover on recycle symbol - it spins */
-    
-function reduceFunction(){
-    document.getElementsByClassName("R1").style.color = "red";
-} 
-
-var spinner = document.getElementsByClassName("threeRsWhite");
-
-var R1 = document.getElementsByClassName("R1");
-
-var R2 = document.getElementsByClassName("R2");
-
-var R3 = document.getElementsByClassName("R3");
-
-var R1_Explained = document.getElementsByClassName("R1_Explained");
-
-var R2_Explained = document.getElementsByClassName("R2_Explained");
-
-var R3_Explained = document.getElementsByClassName("R3_Explained");
-
-
-var RSymbol;
-
-R1.addEventListener("click", function(){
-    RSymbol = "pick1"
-});
-
-R2.addEventListener("click", function(){
-    RSymbol = "pick2"
-});
-
-R3.addEventListener("click", function(){
-    RSymbol = "pick3"
-});
-
-function recyclePicks(R1, R2, R3){
-    if(RSymbol == "pick1"){
-        R2.addClass = "unlisted";
-    }
-}   
-    
-    
-    
-</script>
 </head>
 <body class="wrapper_RM">
     
@@ -77,83 +26,83 @@ function recyclePicks(R1, R2, R3){
         </div>
         <div class="sustain">
             <ul class="listed">
-                <li class="R1" onclick="reduceFunction()">REDUCE</li><br/>
-                <li class="R2" onclick="reuseFunction()">REUSE</li><br/>
-                <li class="R3" onclick="recycleFunction()">RECYCLE</li><br/>
+                <li id="R1">REDUCE</li><br/>
+                <li id="R2">REUSE</li><br/>
+                <li id="R3">RECYCLE</li><br/>
             </ul>
         </div>
-        <div class="R1_Explained">
+        <div id="R1_Explained">
              
-             <div class="rListgroup">REDUCE<br/>
+             <div class="rListgroup_R1">REDUCE<br/>
 	         </div>
                
-             <div class="rlisting">Print on both sides of the paper to reduce paper wastage.</div>
+             <div class="rlisting_R1">Print on both sides of the paper to reduce paper wastage.</div>
                
-             <div class="rlisting">Use electronic mail to reach out to people instead of sending paper mail.</div>
+             <div class="rlisting_R1">Use electronic mail to reach out to people instead of sending paper mail.</div>
                
-             <div class="rlisting">Remove your name from the mailing lists that you no longer want to receive.</div>
+             <div class="rlisting_R1">Remove your name from the mailing lists that you no longer want to receive.</div>
                
-             <div class="rlisting rlistingL">Use cloth napkins instead of paper napkins.</div>
+             <div class="rlisting_R1 rlistingL_R1">Use cloth napkins instead of paper napkins.</div>
                
-             <div class="rlistingL2">Avoid using disposable plates, spoons, glass, cups and napkins. They add to the problem and result in large amount of waste.</div>
+             <div class="rlistingL2_R1">Avoid using disposable plates, spoons, glass, cups and napkins. They add to the problem and result in large amount of waste.</div>
                
-             <div class="rlistingL2">Avoid buying items that are over-packaged with foil, paper, and plastic. This excess packaging goes to waste.</div>
+             <div class="rlistingL2_R1">Avoid buying items that are over-packaged with foil, paper, and plastic. This excess packaging goes to waste.</div>
                
-             <div class="rlistingL2">Buy durable goods that have long warranty. They generally run longer and save landfill space.</div>
+             <div class="rlistingL2_R1">Buy durable goods that have long warranty. They generally run longer and save landfill space.</div>
           
-            <div class="source">Source: conserve-energy-future.com </div>
+            <div class="source_R1">Source: conserve-energy-future.com </div>
         
         </div>
 
         
-        <div class="R2_Explained">
+        <div id="R2_Explained">
              
-             <div class="rListgroup">REUSE<br/>
+             <div class="rListgroup_R2">REUSE<br/>
 	         </div>
              
-             <div class="rlisting">Used wood can be used as firewood or can be used woodcrafts.</div>
+             <div class="rlisting_R2">Used wood can be used as firewood or can be used woodcrafts.</div>
             
-             <div class="rlisting rlistingL">Old and waste envelopes can be used by children to make short notes.</div>
+             <div class="rlisting_R2 rlistingL_R2">Old and waste envelopes can be used by children to make short notes.</div>
             
-             <div class="rlistingL2">Old jars and pots can be used to store items in kitchen. They can also be used to store loose items together such as computer wires.</div>
+             <div class="rlistingL2_R2">Old jars and pots can be used to store items in kitchen. They can also be used to store loose items together such as computer wires.</div>
                
-             <div class="rlistingL2">Old tires can either be sent to recycling station or can be used to make tire swing.</div>
+             <div class="rlistingL2_R2">Old tires can either be sent to recycling station or can be used to make tire swing.</div>
                
-             <div class="rlistingL2">Old newspapers can be used to pack items when you’re planning to move to another home or store old items.</div>
+             <div class="rlistingL2_R2">Old newspapers can be used to pack items when you’re planning to move to another home or store old items.</div>
             
-             <div class="rlistingL2">Waste paper can be used to make notes and sketches and can be send to recycling center when you don’t need them anymore.</div>
+             <div class="rlistingL2_R2">Waste paper can be used to make notes and sketches and can be send to recycling center when you don’t need them anymore.</div>
             
-             <div class="rListgroup Head2">Donate<br/>
+             <div class="rListgroup_R2 Head2_R2">Donate<br/>
 	         </div>
                
-             <div class="rlistingL2">Your old books can be used by poor children or can be donated to public libraries.</div>
+             <div class="rlistingL2_R2">Your old books can be used by poor children or can be donated to public libraries.</div>
                
-             <div class="rlistingL2">Your unwanted clothes can be used by street children or can be donated to charity institutions.</div>
+             <div class="rlistingL2_R2">Your unwanted clothes can be used by street children or can be donated to charity institutions.</div>
                
-             <div class="rlistingL2">Old electric equipment can be donated to schools or NGO’s so that they can use them.</div>
+             <div class="rlistingL2_R2">Old electric equipment can be donated to schools or NGO’s so that they can use them.</div>
             
-             <div class="rlistingL2">Rechargeable batteries can be used again and again and helps to reduce unnecessary wastage as opposed to regular batteries.</div>
+             <div class="rlistingL2_R2">Rechargeable batteries can be used again and again and helps to reduce unnecessary wastage as opposed to regular batteries.</div>
           
-             <div class="source">Source: conserve-energy-future.com </div>
+             <div class="source_R2">Source: conserve-energy-future.com </div>
         
         </div>
  
-        <div class="R3_Explained">
+        <div id="R3_Explained">
              
-             <div class="rListgroup">RECYCLE<br/>
+             <div class="rListgroup_R3">RECYCLE<br/>
 	         </div>
              
-             <div class="rlisting">Buy products that can be recycled such as glass jars.</div>
+             <div class="rlisting_R3">Buy products that can be recycled such as glass jars.</div>
             
-             <div class="rlisting">Buy products that have been made from recycled material.</div>
+             <div class="rlisting_R3">Buy products that have been made from recycled material.</div>
             
-             <div class="rlisting rlistingL">Use recycled paper for printing or making paper handicrafts.</div>
+             <div class="rlisting_R3 rlistingL_R3">Use recycled paper for printing or making paper handicrafts.</div>
             
-             <div class="rlistingL2">Buy products from market that are made up of recycled materials i.e. the product should be environment friendly.</div>
+             <div class="rlistingL2_R3">Buy products from market that are made up of recycled materials i.e. the product should be environment friendly.</div>
                
-             <div class="rlistingL2">Avoid buying hazardous materials that could pose difficulty for you to recycle. Buy non-toxic products, whenever possible.</div>
+             <div class="rlistingL2_R3">Avoid buying hazardous materials that could pose difficulty for you to recycle. Buy non-toxic products, whenever possible.</div>
           
-            <div class="source">Source: conserve-energy-future.com </div>
+            <div class="source_R3">Source: conserve-energy-future.com </div>
         
         </div>
         <div class="however">
@@ -161,7 +110,7 @@ function recyclePicks(R1, R2, R3){
         </div>
         <div class="NegFx">
              
-             <div class="rListgroup">There are<br/>Negative Effects of Recycling<br/>
+             <div class="rListgroup_NegFx">There are<br/>Negative Effects of Recycling<br/>
 	         </div>
              
              <div class="rArticle">Plastic pollution is one of the greatest threats to ocean health worldwide.<br/>With skyrocketing plastic production, low levels of recycling, and poor waste management, between 4 and 12 million metric tons of plastic enter the ocean each year—enough to cover every foot of coastline on the planet! And that amount is expected to more than double in the next 10 years. Let that sink in for a moment.<br/>
@@ -222,7 +171,7 @@ function recyclePicks(R1, R2, R3){
              These seven ideas only scratch the surface for ways you can help address the growing problem of plastic pollution in the oceans. The important thing is that we all do something, no matter how small. For more ideas and resources, sign up to join our Blue Habits community of people worldwide committed to joyful daily actions that improve ocean health.<br/>
              </div>
           
-             <div class="source" id="sourceMore">Source: Brian Hutchinson, oceanicsociety.org </div>
+             <div class="source_NegFx" id="sourceMore">Source: Brian Hutchinson, oceanicsociety.org </div>
             
              <div id="readLess">Read Less
              </div>
@@ -234,72 +183,64 @@ function recyclePicks(R1, R2, R3){
         Support our petition to federally ban single use plastics.
         <div type="button" class="banButton">SIGN</div>
         </div>
+        <div id="BanModal">
+        <input type="text" placeholder="First Name" class="BanForm">
+        <input type="text" placeholder="Last Name" class="BanForm">
+        <input type="text" placeholder="Address" class="BanForm">
+        <input type="text" placeholder="Address" class="BanForm">
+        <input type="text" placeholder="City" class="BanForm">
+        <input type="text" placeholder="State" class="BanForm">
+        <input type="text" placeholder="Zip Code" class="BanForm">
+        <input type="submit" value="SUBMIT" class="BanForm BanFormSubmit">
+        </div>
         
         
     </div>	
 </div>
     
+<!--<script type="text/javascript" src="group-2-recycle.js">
+</script>-->
 
-<script type="text/javascript" src="group-2.js"></script>
-
-<script type="text/javascript" src="group-2-recycle.js">
-</script>
-    
 <script>
 /* rosie js */
 /* hover on recycle symbol - it spins */
-    
-function reduceFunction(){
-    document.getElementsByClassName("R1").style.color = "red";
-} 
 
-var spinner = document.getElementsByClassName("threeRsWhite");
+var spinner = document.getElementByClassName("threeRsWhite");
 
-var R1 = document.getElementsByClassName("R1");
+var R1 = document.getElementById("R1");
 
-var R2 = document.getElementsByClassName("R2");
+var R2 = document.getElementById("R2");
 
-var R3 = document.getElementsByClassName("R3");
+var R3 = document.getElementById("R3");
 
-var R1_Explained = document.getElementsByClassName("R1_Explained");
+var R1_Explained = document.getElementById("R1_Explained");
 
-var R2_Explained = document.getElementsByClassName("R2_Explained");
+var R2_Explained = document.getElementById("R2_Explained");
 
-var R3_Explained = document.getElementsByClassName("R3_Explained");
+var R3_Explained = document.getElementById("R3_Explained");
 
 
 var RSymbol;
 
-R1.addEventListener("click", function(){
-    RSymbol = "pick1"
-});
 
-R2.addEventListener("click", function(){
-    RSymbol = "pick2"
-});
-
-R3.addEventListener("click", function(){
-    RSymbol = "pick3"
-});
-
-function recyclePicks(R1, R2, R3){
-    if(RSymbol == "pick1"){
-        R2.addClass = "unlisted";
-    }
-}   
+/*R1.addEventListener(“click”, function(){
+document.getElementById(“R2”).style.opacity = “.5”;
+document.getElementById(“R3”).style.opacity = “.5”;
+document.getElementById(“R2_Explained”).style.display = “none”;
+document.getElementById(“R2_Explained”).children.style.display = “none”;
+document.getElementById(“R3_Explained”).style.display = “none”;
+document.getElementById(“R3_Explained”).children.style.display = “none”;
+});*/
     
-    
+R1.addEventListener(“click”,function(){
+    console.log("hi")
+});
     
 </script>
-    
-    
-<!--<script>
-$(".threeRsWhite").mouseenter(function(){
-	$(this).addClass("spin").delay().queue(function(){
-		$(this).removeClass("spin").dequeue();
-	});
-	
-});
+
+<!--<script type="text/javascript" src="group-2.js"></script>-->
+
+<!--<script type="text/javascript" src="group-2-recycle.js">
 </script>-->
     
 </body>
