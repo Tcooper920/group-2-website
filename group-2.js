@@ -71,3 +71,21 @@ backToTopBtn.addEventListener("click", function() {
 	window.scrollTo(0, 0);
 
 });
+
+
+// Donation light box
+document.getElementById("donateButton").addEventListener("click", function() {
+  document.getElementById("lightbox").className = "open";
+});
+
+document.getElementById("close").addEventListener("click", function() {
+  document.getElementById("lightbox").className = "";
+});
+
+document.getElementById("lightbox").addEventListener("click", function(e) {
+  if (e.target.id == "lightbox") {
+    document.getElementById("lightbox").className = "";
+  }
+});
+
+

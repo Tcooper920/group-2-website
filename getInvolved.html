@@ -41,11 +41,20 @@
                 <p>With the support of more than 850,000 activists like you, we have already protected over 4.5 million square miles of ocean and innumerable sea turtles, sharks, dolphins, and other sea creatures – but there is still more to be done.</p>
 
                 <p>Support our work to protect the oceans by giving today. With your help, we can protect marine life and habitats.</p>
-                <p><b>Commit to donate:</b></p>
+<button id="donateButton">Donate</button>
 
-        <input type="button" id="five" placeholder="sign" value="$5">
-        <input type="button" id="ten" placeholder="sign" value="$10">
-        <input type="button" id="twenty" placeholder="sign" value="$20">
+<div id="lightbox">
+  <div id="lightbox_content">
+    <div id="close">&times;</div>
+    <h2>Make a Donation</h2>
+    <p>Taking care of our oceans is a big job and every little bit helps. There are many hardworking organizations doing everything they can protect and preserve our oceans. </p>
+    <br>
+    <div class="donationOption"><a href="https://theoceancleanup.com/">The Ocean Clean Up</a></div>
+    <div class="donationOption"><a href="https://act.oceana.org/page/24570/donate/1?ea.tracking.id=MR_SEM_GG_Brand18&gclid=EAIaIQobChMIxp-X8PWV6AIVh5-zCh2rNw-YEAAYASAAEgKXE_D_BwE">Oceana.org</a></div>
+    <div class="donationOption"><a href="https://coral.org/">Coral Reef Alliance</a></div>
+    <div class="donationOption"><a href="https://www.projectaware.org/">Project AWARE</a></div>
+  </div>
+</div>
   
         </div>
             <div class="entry">
@@ -89,20 +98,6 @@ sign.addEventListener("click", function() {
     alert(naming.value + ", thank you for pledging to quit the cutlery.");
 });
 
-var five = document.getElementById('five');
-five.addEventListener("click", function() {
-    alert("Thank you for committing to donate " + five.value);
-});
-
-var ten = document.getElementById('ten');
-ten.addEventListener("click", function() {
-    alert("Thank you for committing to donate " + ten.value);
-});
-
-var twenty = document.getElementById('twenty');
-twenty.addEventListener("click", function() {
-    alert("Thank you for committing to donate " + twenty.value);
-});
 </script>
 </body>
 </html>
