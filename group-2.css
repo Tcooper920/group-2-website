@@ -284,6 +284,8 @@ footer {
 #lightbox.open {
   display: block;
   background:url(images/water.png);
+    background-size: cover;
+    
 }
 
 #lightbox_content {
@@ -329,6 +331,19 @@ footer {
   background: rgba(82,162,226,.8);
 }
 
+button#donateButton {
+    cursor: pointer;
+    background: orange;
+    padding: 8px;
+    color: white;
+    margin: 0px auto;
+    display: block;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 10px
+}
+
 /* MEDIA QUERIES ***************************************************************/
 
 @media screen and (max-width: 650px) {
@@ -362,8 +377,15 @@ footer {
 	}
 
 	#lightbox_content {
-  left: 68%;
+        left: 68%;
 }
+    
+    input[type=text] {
+        width: 40%;
+    }
+    input[type=button], input[type=submit], input[type=reset] {
+        width: 40%;
+    }
 }
 
 @media screen and (min-width: 1050px) {
