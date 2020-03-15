@@ -88,6 +88,9 @@ document.getElementById("lightbox").addEventListener("click", function(e) {
   }
 });
 
+});
+
+
 ///////////// resets to recycle box shows and resets words white ////////RM///////////
 
 document.getElementById("threeRsWhite").onclick = function() {spinSpinSpin()};
