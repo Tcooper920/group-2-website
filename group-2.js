@@ -87,8 +87,6 @@ document.getElementById("lightbox").addEventListener("click", function(e) {
   }
 });
 
-});
-
 
 
 
