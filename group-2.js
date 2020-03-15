@@ -67,9 +67,8 @@ window.onscroll = function() {
 // /* "Back to Top" button *********/
 var backToTopBtn = document.getElementById("back-top-top");
 
-backToTopBtn.addEventListener("click", function() {
+backToTopBtn.addEventListener("click", function(){
 	window.scrollTo(0, 0);
-
 });
 
 
@@ -89,6 +88,9 @@ document.getElementById("lightbox").addEventListener("click", function(e) {
 });
 
 });
+
+
+
 
 
 ///////////// resets to recycle box shows and resets words white ////////RM///////////
