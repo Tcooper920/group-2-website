@@ -1,26 +1,3 @@
-var naming = document.getElementById('naming');
-
-
-sign.addEventListener("click", function() {
-	alert(naming.value + " thank you for signing the pledge");
-})
-
-
-var five = document.getElementById('five');
-five.addEventListener("click", function() {
-	alert("Thank you for committing to donate " + five.value);
-})
-
-var ten = document.getElementById('ten');
-ten.addEventListener("click", function() {
-	alert("Thank you for committing to donate " + ten.value);
-})
-
-var twenty = document.getElementById('twenty');
-twenty.addEventListener("click", function() {
-	alert("Thank you for committing to donate " + twenty.value);
-
-
 /* mobile dropdown menu triggered by clicking "hamburger" button *********/
 document.getElementById("mobile-menu-button").addEventListener("click", function () {
 
@@ -42,7 +19,7 @@ document.getElementById("mobile-menu-button").addEventListener("click", function
 
 });
 
-/* display the hidden nav links when expanding browser width from mobile size to desktop size *********/
+// display the hidden nav links when expanding browser width from mobile size to desktop size *********/
 function displayHiddenNavLinksOnDesktop() {
 
 	var numberOfLinks = document.getElementsByClassName("page-links");
@@ -61,7 +38,7 @@ function displayHiddenNavLinksOnDesktop() {
 
 window.onresize = displayHiddenNavLinksOnDesktop;
 
-/* hide nav bar when scrolling down and show nav bar when scrolling up *********/
+// hide nav bar when scrolling down and show nav bar when scrolling up *********/
 var beforeScrollPosition = window.pageYOffset;
 
 window.onscroll = function() {
@@ -87,12 +64,97 @@ window.onscroll = function() {
 	beforeScrollPosition = currentScrollingPosition;
 }
 
-/* "Back to Top" button *********/
-
+// /* "Back to Top" button *********/
 var backToTopBtn = document.getElementById("back-top-top");
 
 backToTopBtn.addEventListener("click", function() {
 	window.scrollTo(0, 0);
-})
 
+});
+
+
+// Donation light box
+document.getElementById("donateButton").addEventListener("click", function() {
+  document.getElementById("lightbox").className = "open";
+});
+
+document.getElementById("close").addEventListener("click", function() {
+  document.getElementById("lightbox").className = "";
+});
+
+document.getElementById("lightbox").addEventListener("click", function(e) {
+  if (e.target.id == "lightbox") {
+    document.getElementById("lightbox").className = "";
+  }
+});
+
+///////////// resets to recycle box shows and resets words white ////////RM///////////
+
+document.getElementById("threeRsWhite").onclick = function() {spinSpinSpin()};
+
+function spinSpinSpin(){
+    document.getElementById("R1").style.opacity = "1";
+    document.getElementById("R2").style.opacity = "1";
+    document.getElementById("R3").style.opacity = "1";
+    document.getElementById("R1_Explained").style.display = "block";
+    document.getElementById("R2_Explained").style.display = "none";
+    document.getElementById("R3_Explained").style.display = "none";
+}
+
+///////////// reduce box shows and dims other words ///////////RM/////////
+
+document.getElementById("R1").onclick = function() {reduceBox()};
+
+function reduceBox(){
+    document.getElementById("R1").style.opacity = "1";
+    document.getElementById("R2").style.opacity = ".3";
+    document.getElementById("R3").style.opacity = ".3";
+    document.getElementById("R1_Explained").style.display = "block";
+    document.getElementById("R2_Explained").style.display = "none";
+    document.getElementById("R3_Explained").style.display = "none";
+}
+
+///////////// reuse box shows and dims other words //////////RM//////////
+
+document.getElementById("R2").onclick = function() {reuseBox()};
+
+function reuseBox(){
+    document.getElementById("R1").style.opacity = ".3";
+    document.getElementById("R2").style.opacity = "1";
+    document.getElementById("R3").style.opacity = ".3";
+    document.getElementById("R1_Explained").style.display = "none";
+    document.getElementById("R2_Explained").style.display = "block";
+    document.getElementById("R3_Explained").style.display = "none";
+}
+
+///////////// recycle box shows and dims other words /////////RM///////////
+
+document.getElementById("R3").onclick = function() {recycleBox()};
+
+function recycleBox(){
+    document.getElementById("R1").style.opacity = ".3";
+    document.getElementById("R2").style.opacity = ".3";
+    document.getElementById("R3").style.opacity = "1";
+    document.getElementById("R1_Explained").style.display = "none";
+    document.getElementById("R2_Explained").style.display = "none";
+    document.getElementById("R3_Explained").style.display = "block";
+}
+
+///////////// read more and read less toggle //////////////RM//////
+
+document.getElementById("readMoreOrLess").onclick = function() {readLess()};
+
+
+function readLess(){
+    var buttonLess = document.getElementById("readMoreOrLess"); 
+    var hiddenWords = document.getElementById("hiddenWords");
+    
+    if(buttonLess.innerHTML === "Read Less"){
+        buttonLess.innerHTML = "Read More";
+        hiddenWords.style.display = "none";
+    } else {
+        buttonLess.innerHTML = "Read Less";
+        hiddenWords.style.display = "block";
+    }
+}
 
