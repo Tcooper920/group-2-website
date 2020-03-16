@@ -51,7 +51,7 @@ window.onscroll = function() {
 		for (var i = 0; i < numberOfLinks.length; i++) { // hide links in nav bar
 			document.getElementsByTagName("nav")[0].getElementsByClassName("page-links")[i].style.display = "none";
 		}
-		document.getElementsByTagName("nav")[0].style.top = "-3rem"; // hide nav bar
+		document.getElementsByTagName("nav")[0].style.top = "-6rem"; // hide nav bar
 	} else {
 		
 		if (window.innerWidth >= 650) { // hide links by default if window resized from desktop to mobile width
@@ -71,11 +71,17 @@ backToTopBtn.addEventListener("click", function(){
 	window.scrollTo(0, 0);
 });
 
-
 // Donation light box
 document.getElementById("donateButton").addEventListener("click", function() {
   document.getElementById("lightbox").className = "open";
 });
+
+/* if footer donation button exists, add event listener */
+if (document.getElementsByClassName("donation-button")[0] !== undefined) {
+	document.getElementsByClassName("donation-button")[0].addEventListener("click", function() { /* Footer donation button */
+  		document.getElementById("lightbox").className = "open";
+	});
+}
 
 document.getElementById("close").addEventListener("click", function() {
   document.getElementById("lightbox").className = "";
@@ -87,13 +93,10 @@ document.getElementById("lightbox").addEventListener("click", function(e) {
   }
 });
 
-
-
-
-
 ///////////// resets to recycle box shows and resets words white ////////RM///////////
-
-document.getElementById("threeRsWhite").onclick = function() {spinSpinSpin()};
+if (document.getElementById("threeRsWhite") !== null) {
+	document.getElementById("threeRsWhite").onclick = function() {spinSpinSpin()};
+}
 
 function spinSpinSpin(){
     document.getElementById("R1").style.opacity = "1";
@@ -105,8 +108,9 @@ function spinSpinSpin(){
 }
 
 ///////////// reduce box shows and dims other words ///////////RM/////////
-
-document.getElementById("R1").onclick = function() {reduceBox()};
+if (document.getElementById("R1") !== null) {
+	document.getElementById("R1").onclick = function() {reduceBox()};
+}
 
 function reduceBox(){
     document.getElementById("R1").style.opacity = "1";
@@ -118,8 +122,9 @@ function reduceBox(){
 }
 
 ///////////// reuse box shows and dims other words //////////RM//////////
-
-document.getElementById("R2").onclick = function() {reuseBox()};
+if (document.getElementById("R2") !== null) {
+	document.getElementById("R2").onclick = function() {reuseBox()};
+}
 
 function reuseBox(){
     document.getElementById("R1").style.opacity = ".3";
@@ -131,8 +136,9 @@ function reuseBox(){
 }
 
 ///////////// recycle box shows and dims other words /////////RM///////////
-
-document.getElementById("R3").onclick = function() {recycleBox()};
+if (document.getElementById("R2") !== null) {
+	document.getElementById("R2").onclick = function() {recycleBox()};
+}
 
 function recycleBox(){
     document.getElementById("R1").style.opacity = ".3";
@@ -144,9 +150,9 @@ function recycleBox(){
 }
 
 ///////////// read more and read less toggle //////////////RM//////
-
-document.getElementById("readMoreOrLess").onclick = function() {readLess()};
-
+if (document.getElementById("readMoreOrLess") !== null) {
+	document.getElementById("readMoreOrLess").onclick = function() {readLess()};
+}
 
 function readLess(){
     var buttonLess = document.getElementById("readMoreOrLess"); 
