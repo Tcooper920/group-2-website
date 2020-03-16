@@ -45,6 +45,7 @@
 #R1:hover, #R2:hover, #R3:hover {
     color:#fff;
     text-shadow: 0 0 14px #ffffffc3;
+    cursor: pointer;
 }
 .unlisted {
     margin-left: 2%;
