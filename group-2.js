@@ -143,8 +143,8 @@ function reuseBox(){
 }
 
 ///////////// recycle box shows and dims other words /////////RM///////////
-if (document.getElementById("R2") !== null) {
-	document.getElementById("R2").onclick = function() {recycleBox()};
+if (document.getElementById("R3") !== null) {
+	document.getElementById("R3").onclick = function() {recycleBox()};
 }
 
 function recycleBox(){
