@@ -392,6 +392,22 @@ button#donateButton {
     margin-top: 10px
 }
 
+#donateButtonInBodyText {
+      background-color: #ff8122;
+      display: block;
+      padding: 1rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 5px;
+      margin: 0 auto;
+      border: 0;
+      min-width: 50%;
+      margin-top: 1rem;
+}
+
 /* MEDIA QUERIES ***************************************************************/
 
 @media screen and (max-width: 649px) {
@@ -421,7 +437,7 @@ button#donateButton {
 		position: absolute;
     	top: 1.5rem;
     	left: 1rem;
- 		width: 15rem;
+ 		  width: 15rem;
 	}
 
 	.two-row-wrapper {
