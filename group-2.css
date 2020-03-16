@@ -1,5 +1,6 @@
 * {
 	margin: 0;
+    box-sizing:border-box;
 }
 
 h1, h2, h3 {
@@ -13,8 +14,14 @@ body {
 	font-weight: 400;
 	line-height: 1.5rem;
 	color: #58595b;
+    display: block;
+	overflow:auto;
 }
-
+.wrapper_RM {
+    width:100vw;
+    margin-left: auto;
+    margin-right: auto;
+}
 h1 {
 	font-weight: bold;
 	color: #ff8122;
@@ -42,21 +49,20 @@ p {
 
 nav {
 	display: flex;
-	align-items: center;
-	height: 3rem;
-	background-color: #434e52;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	padding-right: 1rem;
-	-webkit-box-shadow: 0px 0px 4px 0px rgba(199,199,199,1);
+    align-items: center;
+    background-color: #434e52;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(199,199,199,1);
 -moz-box-shadow: 0px 0px 4px 0px rgba(199,199,199,1);
 box-shadow: 0px 0px 4px 0px rgba(199,199,199,1);
-	position: fixed;
-	width: 100%;
-	margin-bottom: 1.5rem;
-	transition: top .5s;
-	z-index: 1;
-	top: 0;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    transition: top .5s;
+    z-index: 99999;
+    top: 0;
 }
 
 nav a {
@@ -95,11 +101,15 @@ a.current-page {
 	max-width: 100%;
 }
 
+.sustain ul li{
+    display:inline-block;
+}
+
 .two-row-wrapper {
 	display: flex;
 }
 
-.two-row-wrapper > *{
+.two-row-wrapper > * {
 	flex: 1;
     padding: 1.5rem 2rem 1.5rem 2rem;
 }
@@ -120,7 +130,8 @@ a.current-page {
 }
 
 .number {
-    color:rgba(255,129,34,.2);
+    color:rgba(255,129,34,.3);
+    /*use .3 for rgba not .2 */
     font-size:73px;
     font-family: "Courier New", Courier, monospace;
     position: absolute;
@@ -144,13 +155,13 @@ a.current-page {
 }
 
 .entry h1 {
-    margin-left: 25px;
+    margin-top: 3rem;
     border-bottom: 2px solid #52a2e2;
     text-align: center;
 }
 
 .left {
-    background-image: url(images/12);
+    background-image: url(images/12.jpg);
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /
 }
@@ -169,7 +180,8 @@ a.current-page {
     border: 1px solid white;
     padding: 20px;
     width: 70%;
-    margin: 10px;
+    margin: 0 auto;
+    margin-top: 4rem; 
 }
 
 input[type=button], input[type=submit], input[type=reset] {
@@ -188,7 +200,7 @@ width: 20%;
 
 input[type=text] {
   border: 1px solid #52a2e2;
-  color: white;
+  color: black;
   padding: 0px 15px;
   text-decoration: none;
   cursor: pointer;
@@ -320,18 +332,20 @@ footer {
 #lightbox.open {
   display: block;
   background:url(images/water.png);
+  background-size: cover;
 }
 
 #lightbox_content {
   position: absolute;
-  width: 300px;
-  height: 400px;
+  width: 350px;
+  height: auto;
   background: white;
   border: 1px solid #52a2e2;;
   border-radius: 3px;
-  left: 50%;
   top: 38%;
-  margin-left: -181px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   margin-top: -200px;
   text-align: center;
   padding: 60px 30px;
@@ -363,6 +377,19 @@ footer {
 
 .donationOption:hover {
   background: rgba(82,162,226,.8);
+}
+
+button#donateButton {
+    cursor: pointer;
+    background: orange;
+    padding: 8px;
+    color: white;
+    margin: 0px auto;
+    display: block;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 10px
 }
 
 /* MEDIA QUERIES ***************************************************************/
@@ -404,12 +431,24 @@ footer {
 	#donation-container {
 		height: initial;
 	}
+
 	#donation-container div:nth-child(1) {
     	padding-bottom: 0;
-    }
+  }
     .sources {
     	font-size: .8rem;
-    }
+  }
+  .left .text {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .pledge {
+    width: 100%;
+  }
+  .pledge input[type=text] {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 650px) {
@@ -430,19 +469,23 @@ footer {
 		opacity: .7;
 		transition: opacity .5s;
 	}
+    
+    input[type=text] {
+        width: 40%;
+    }
+    input[type=button], input[type=submit], input[type=reset] {
+        width: 40%;
+    }
+    
 }
 
 @media screen and (min-width: 1050px) {
 	.two-row-wrapper, .one-row-wrapper {
-		padding-left: 9rem;
-		padding-right: 9rem;
+		  padding-left: 9rem;
+		  padding-right: 9rem;
 	}
-
-	.two-row-wrapper-get-involved-page {
-		padding: 0px 0px;
-	}
-
-	.two-row-wrapper-get-involved-page {
-		
-	}
+  .two-row-wrapper-get-involved-page {
+      padding-left: 0;
+      padding-right: 0;
+  }
 }
