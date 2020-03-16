@@ -83,6 +83,13 @@ if (document.getElementsByClassName("donation-button")[0] !== undefined) {
 	});
 }
 
+/* if donation button in body text exists, add event listener */
+if (document.getElementById("donateButtonInBodyText") !== null) {
+	document.getElementById("donateButtonInBodyText").addEventListener("click", function() { /* Footer donation button */
+  		document.getElementById("lightbox").className = "open";
+	});
+}
+
 document.getElementById("close").addEventListener("click", function() {
   document.getElementById("lightbox").className = "";
 });
